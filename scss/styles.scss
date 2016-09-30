@@ -1,17 +1,78 @@
 // Imports
-
+@import "partials/clearfix";
+@import "partials/general_styles";
+@import "partials/reset";
 
 
 // 1. Many small items in a grid
 
+.small-grid-flexbox ul{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
 
+}
+
+.small-grid-flexbox ul li{
+  flex: 0 0 10%;
+  height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+
+
+}
 
 // 2. 2-Column Grid
 
+.two-col-grid-flexbox{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.two-col-grid-flexbox .column-1{
+  order: 1;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
 
+.two-col-grid-flexbox .column-2{
+  order: 2;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
 
 // 3. Centering
 
-
+.centering-formula-1{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
 // 4. Ordering
+
+.ordering-block{
+  display:flex;
+  flex-flow: row wrap;
+}
+.item{
+  box-sizing: border-box;
+}
+.item-a{
+order: 4;
+flex: 0 0 20%;
+}
+.item-b{
+order: 3;
+flex: 0 0 25%;
+}
+.item-c{
+order: 2;
+flex: 0 0 15%;
+}
+.item-d{
+order: 1;
+flex: 0 0 40%;
+}
